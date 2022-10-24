@@ -84,13 +84,6 @@ public class Main extends Application {
             }
         };
 
-
-
-
-
-
-
-
         primaryStage.setTitle("Game");
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -5,27 +5,26 @@ import javafx.animation.Interpolator;
 import javafx.animation.Transition;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.image.ImageView;
-
-import java.time.Duration;
+import javafx.util.Duration;
 
 public class SpriteAnimation extends Transition {
-    private final ImageView imageView;
-    private final int count;
-    private final int columns;
-    private int offsetX;
-    private int offsetY;
-    private final int width;
-    private final int height;
+     private final ImageView imageView;
+     private final int count;
+     private final int columns;
+     private int offsetX;
+     private int offsetY;
+     private final int width;
+     private final int height;
 
 
     public SpriteAnimation(
-            ImageView ImageView,
+            ImageView imageView,
             Duration duration,
             int count, int columns,
             int offsetX, int offsetY,
             int width, int height
     ){
-        this.imageView = new ImageView;
+        this.imageView = imageView;
         this.count = count;
         this.columns = columns;
         this.offsetX = offsetX;
