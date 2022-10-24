@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class Main extends Application {
     private HashMap<KeyCode, Boolean> keys = new HashMap<>();
     public static ArrayList<Rectangle> bonuses = new ArrayList<>();
-    Image image = new Image(getClass().getResourceAsStream("1.png"));
+    Image image = new Image(getClass().getResourceAsStream("12.png"));
     ImageView imageView = new ImageView(image);
     Character player = new Character(imageView);
     static Pane root = new Pane();
@@ -83,10 +83,14 @@ public class Main extends Application {
 
             }
         };
-
+        timer.start();
         primaryStage.setTitle("Game");
         primaryStage.setScene(scene);
         primaryStage.show();
 
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }

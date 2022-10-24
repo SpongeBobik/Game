@@ -12,8 +12,8 @@ public class Character extends Pane {
     int columns = 3;
     int offsetX = 0;
     int offsetY = 0;
-    int width = 32;
-    int height = 32;
+    int width = 64;
+    int height = 64;
     int score = 0;
     Rectangle removeRect = null;
     SpriteAnimation animation;
