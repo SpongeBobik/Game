@@ -17,7 +17,7 @@ import java.util.HashMap;
 public class Main extends Application {
     private HashMap<KeyCode, Boolean> keys = new HashMap<>();
     public static ArrayList<Rectangle> bonuses = new ArrayList<>();
-    Image image = new Image(getClass().getResourceAsStream("12.png"));
+    Image image = new Image(getClass().getResourceAsStream("1.png"));
     ImageView imageView = new ImageView(image);
     Character player = new Character(imageView);
     static Pane root = new Pane();
@@ -40,7 +40,7 @@ public class Main extends Application {
     public void update(){
         if (isPressed(KeyCode.UP)){
             player.animation.play();
-            player.animation.setOffsetY(96);
+            player.animation.setOffsetY(196);
             player.moveY(-2);
         }else if (isPressed(KeyCode.DOWN)){
             player.animation.play();
@@ -48,11 +48,11 @@ public class Main extends Application {
             player.moveY(2);
         } else if (isPressed(KeyCode.RIGHT)) {
             player.animation.play();
-            player.animation.setOffsetY(64);
+            player.animation.setOffsetY(128);
             player.moveX(2);
         } else if (isPressed(KeyCode.LEFT)) {
             player.animation.play();
-            player.animation.setOffsetY(32);
+            player.animation.setOffsetY(64);
             player.moveX(-2);
         }else {
             player.animation.stop();
